@@ -1,9 +1,12 @@
-asyncio is a **cooperative concurrency framework** was written to address the need for fast **single-threaded** programs that don't waste CPU time on I/O bound tasks.
+asyncio is a **cooperative concurrency library** was written to address the need for fast **single-threaded** programs that don't waste CPU time on I/O bound tasks.
 
 Rapid development from 3.4 to 3.7. (make sure you see the latest version documentation and tutorials)
 
 - Coroutines are cooperative unlike python threads which are preemptive.
 - Each coroutine is a line of execution that can suspend its control of the program to allow another coroutine to run. 
+
+[python_concurrency]: python_concurrency.png
+![alt text][python_concurrency]
 
 ## async/await
 - async/await is python's api interface to define coroutines. asyncio is the framework which uses those definitions to provide a concurrency.
