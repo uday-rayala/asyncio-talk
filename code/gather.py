@@ -16,6 +16,11 @@ async def factorial(name, number):
 
 
 async def main():
+    # Sequential
+    # await factorial("A", 2)
+    # await factorial("B", 3)
+    # await factorial("C", 4)
+
     # Schedule three calls *concurrently*:
     x = await asyncio.gather(
         factorial("A", 2),

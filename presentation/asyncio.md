@@ -121,8 +121,10 @@ asyncio.run(main())
 - Tasks can be cancelled with `.cancel()` method.
 - This will raise `CancelledError` exception at await.
 - If this exception is not caught, coroutine will be terminated.
-- `asyncio.shield()` can be used to not cancel.
+
 [Code](../code/cancel.py)
+
+- `asyncio.shield()` can be used to not cancel.
 
 ## Gather 
 

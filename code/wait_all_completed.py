@@ -14,9 +14,7 @@ async def main():
     finished, pending = await asyncio.wait(coros, return_when=asyncio.ALL_COMPLETED)
 
     assert raiser_future in finished
-    assert raiser_future not in pending
     assert hello_world_future in finished
-    assert hello_world_future not in pending
 
     print(raiser_future.exception())
     print(hello_world_future.result())
