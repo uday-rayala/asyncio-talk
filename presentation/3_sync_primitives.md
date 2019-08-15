@@ -1,3 +1,5 @@
+## Synchronisation Primitives
+
 Source: https://docs.python.org/3/library/asyncio-sync.html
 
 - asyncio synchronization primitives are designed to be similar to those of the threading module with two important caveats:
@@ -13,4 +15,12 @@ asyncio has the following basic synchronization primitives:
 - Semaphore
 - BoundedSemaphore
 
-[Next](./what_next.md)
+## Subprocesses
+
+Source: https://docs.python.org/3/library/asyncio-subprocess.html
+
+## Queues to distribute tasks
+
+Source: https://docs.python.org/3/library/asyncio-queue.html
+
+[Next](4_what_next.md)

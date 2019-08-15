@@ -21,7 +21,7 @@ I/O-bound problems cause your program to slow down because it frequently must wa
 
 They arise frequently when your program is working with things that are much slower than your CPU.
 
-[io_bound]: ./io_bound.png
+[io_bound]: io_bound.jpg
 ![alt text][io_bound]
 
 
@@ -37,7 +37,7 @@ These are the CPU-bound programs, because the resource limiting the speed of you
 
     
 ## Process vs Threads
-###Process
+### Process
 - Created by the operating system to run programs
 - Process can have multiple threads
 - Two processes can execute code simultaneously in the same python program
@@ -53,14 +53,17 @@ These are the CPU-bound programs, because the resource limiting the speed of you
 ![alt text][python_concurrency]
 
 Python supports concurrency with the following packages:
-- multiprocessing
-  - Swapns multiple process.
-  - Best suited for CPU intensive workloads.
 - threading
   - achieves concurrency using threads.
-  - GIL prevents multiple threads executing python bytecode at once. [Code](../code/factorial.py)
+  - GIL (Global Interpreter Lock) prevents multiple threads executing python bytecode at once. 
   - however, and libraries like Numpy bypass GIL limitation by running external code in C.
   - So best suited for I/O workloads.
+- multiprocessing
+  - Swapns multiple process.
+  - Best suited for CPU intensive workloads. 
 - asyncio
 
-[Next](./asyncio.md)
+[CPU-Bound Code](../code/factorial.py)
+[IO-Bound Code](../code/io.py)
+
+[Next](2_asyncio.md)

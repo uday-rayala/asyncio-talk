@@ -1,16 +1,12 @@
 asyncio is a **cooperative concurrency framework** was written to address the need for fast **single-threaded** programs that don't waste CPU time on I/O bound tasks.
 
-Runs in a single thread, single process.
-
 Rapid development from 3.4 to 3.7. (make sure you see the latest version documentation and tutorials)
 
-## Coroutines with async/await
-
-- Coroutines are a kind of concurrent programming that works collaboratively. 
-- async Coroutines are cooperative unlike python threads which are preemptive.
+- Coroutines are cooperative unlike python threads which are preemptive.
 - Each coroutine is a line of execution that can suspend its control of the program to allow another coroutine to run. 
-- This is particularly useful when a coroutine is waiting for something like a network request to complete.
 
+## async/await
+- async/await is python's api interface to define coroutines. asyncio is the framework which uses those definitions to provide a concurrency.
 
 ```python
 import asyncio
@@ -26,7 +22,7 @@ asyncio.run(main())
 ```
 [Code](../code/coroutines.py)
 
-[io_bound]: ./io_bound.png
+[io_bound]: io_bound_async.png
 ![alt text][io_bound]
 
 - `async def` will make the function a coroutine.
@@ -189,4 +185,4 @@ return_when indicates when this function should return. It must be one of the fo
 
 [Code](../code/executor.py)
 
-[Next](./sync_primitives.md)
+[Next](3_sync_primitives.md)
