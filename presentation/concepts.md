@@ -1,8 +1,7 @@
-asyncio is a **cooperative concurrency framework** was written to address the need for fast **single-threaded** programs that don't waste CPU time on I/O bound tasks.
+## Objective
 
-Runs in a single thread, single process.
+Share understanding of asycio library with examples and content put together from different blogs/tutorials/docs.
 
-Rapid development from 3.4 to 3.7. (make sure you see the latest version documentation and tutorials)
 
 ## Concurrency vs Parallelism
 
