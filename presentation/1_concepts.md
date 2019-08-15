@@ -65,6 +65,4 @@ Python supports concurrency with the following packages:
 
 [CPU-Bound Code](../code/factorial.py)
 
-[IO-Bound Code](../code/io.py)
-
 [Next](2_asyncio.md)
