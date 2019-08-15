@@ -2,7 +2,6 @@
 
 - Parallelism is ability to run multiple tasks at the same time. 
     - Usually achieved by using multiple cores of a processor.
-    - Best for CPU bound tasks.
 - Concurrency is when two or more tasks can start, run, and complete in overlapping time periods. 
     - It doesn't necessarily mean they'll ever both be running at the same instant. 
     - For example, multitasking on a single-core machine.

@@ -9,6 +9,7 @@ Perfect fit for IO-bound and high-level structured network code.
 ## Coroutines with async/await
 
 - Coroutines are a kind of concurrent programming that works collaboratively. 
+- async Coroutines are cooperative unlike python threads which are preemptive.
 - Each coroutine is a line of execution that can suspend its control of the program to allow another coroutine to run. 
 - This is particularly useful when a coroutine is waiting for something like a network request to complete – in this case execution of that coroutine cannot continue, but other useful work could be done by other coroutines.
 
@@ -36,6 +37,7 @@ There are three main types of awaitable objects:
 - coroutines
 - Tasks
 - Futures
+- Objects with `__await__()`
 
 ## Await Coroutine
 ```python
