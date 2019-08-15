@@ -1,3 +1,9 @@
+asyncio is a **cooperative concurrency framework** was written to address the need for fast **single-threaded** programs that don't waste CPU time on I/O bound tasks.
+
+Runs in a single thread, single process.
+
+Rapid development from 3.4 to 3.7. (make sure you see the latest version documentation and tutorials)
+
 ## Coroutines with async/await
 
 - Coroutines are a kind of concurrent programming that works collaboratively. 
